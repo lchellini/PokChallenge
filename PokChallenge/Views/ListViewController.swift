@@ -20,7 +20,7 @@ class ListViewController: UIViewController {
     }
     
     override func didReceiveMemoryWarning() {
-        print("MEMORY WARNING")
+        debugPrint("MEMORY WARNING")
     }
     
     
@@ -28,7 +28,6 @@ class ListViewController: UIViewController {
     
     
     private func initTable() {
-        self.tableV.register(UITableViewCell.self, forCellReuseIdentifier: pokCell_Identifier)
         self.tableV.dataSource = self
         self.tableV.delegate = self
     }
@@ -45,8 +44,9 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: pokCell_Identifier, for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: pokCell_Identifier) as! PokCellView
+        cell.pokName.text = "\(indexPath.row)"
+        cell.pokImage.image = UIImage.init(named: "waitingImage")
         
         return cell
     }
