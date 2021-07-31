@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+
+let pokCell_Identifier:String = "pokCell"
+
+
 class PokCellView: UITableViewCell {
     
     @IBOutlet weak var containerView: UIView!

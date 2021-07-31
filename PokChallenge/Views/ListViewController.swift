@@ -10,7 +10,6 @@ import UIKit
 class ListViewController: UIViewController {
     
     @IBOutlet weak var tableV: UITableView!
-    private let pokCell_Identifier = "pokCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
