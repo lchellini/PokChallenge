@@ -14,6 +14,14 @@
 		EDB3081A26B5399200EAD154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3081926B5399200EAD154 /* Assets.xcassets */; };
 		EDB3081D26B5399200EAD154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB3081B26B5399200EAD154 /* LaunchScreen.storyboard */; };
 		EDB3082C26B5567000EAD154 /* PokCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3082B26B5567000EAD154 /* PokCellView.swift */; };
+		EDB3083026B558D700EAD154 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3082E26B558D700EAD154 /* Observable.swift */; };
+		EDB3083126B558D700EAD154 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3082F26B558D700EAD154 /* AppInfo.swift */; };
+		EDB3083326B558E000EAD154 /* PokAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3083226B558E000EAD154 /* PokAPI.swift */; };
+		EDB3083626B5590000EAD154 /* IndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3083526B5590000EAD154 /* IndexModel.swift */; };
+		EDB3083826B5590500EAD154 /* PokModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3083726B5590500EAD154 /* PokModel.swift */; };
+		EDB3083B26B5592D00EAD154 /* PokViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3083A26B5592D00EAD154 /* PokViewModel.swift */; };
+		EDB3083E26B55E9E00EAD154 /* UIView_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3083D26B55E9D00EAD154 /* UIView_ext.swift */; };
+		EDB3084026B5858E00EAD154 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3083F26B5858E00EAD154 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		EDB3081C26B5399200EAD154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB3081E26B5399200EAD154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB3082B26B5567000EAD154 /* PokCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokCellView.swift; sourceTree = "<group>"; };
+		EDB3082E26B558D700EAD154 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		EDB3082F26B558D700EAD154 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		EDB3083226B558E000EAD154 /* PokAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokAPI.swift; sourceTree = "<group>"; };
+		EDB3083526B5590000EAD154 /* IndexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexModel.swift; sourceTree = "<group>"; };
+		EDB3083726B5590500EAD154 /* PokModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokModel.swift; sourceTree = "<group>"; };
+		EDB3083A26B5592D00EAD154 /* PokViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokViewModel.swift; sourceTree = "<group>"; };
+		EDB3083D26B55E9D00EAD154 /* UIView_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_ext.swift; sourceTree = "<group>"; };
+		EDB3083F26B5858E00EAD154 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,10 @@
 			children = (
 				EDB3081026B5399100EAD154 /* AppDelegate.swift */,
 				EDB3081226B5399100EAD154 /* SceneDelegate.swift */,
+				EDB3082D26B558BE00EAD154 /* Common */,
+				EDB3083C26B55E8300EAD154 /* Ext */,
+				EDB3083426B558EE00EAD154 /* Models */,
+				EDB3083926B5591700EAD154 /* ViewModels */,
 				EDB3082426B53B4F00EAD154 /* Views */,
 				EDB3081626B5399100EAD154 /* Main.storyboard */,
 				EDB3081926B5399200EAD154 /* Assets.xcassets */,
@@ -76,6 +96,42 @@
 				EDB3082B26B5567000EAD154 /* PokCellView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EDB3082D26B558BE00EAD154 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3082F26B558D700EAD154 /* AppInfo.swift */,
+				EDB3083F26B5858E00EAD154 /* Colors.swift */,
+				EDB3082E26B558D700EAD154 /* Observable.swift */,
+				EDB3083226B558E000EAD154 /* PokAPI.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EDB3083426B558EE00EAD154 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3083526B5590000EAD154 /* IndexModel.swift */,
+				EDB3083726B5590500EAD154 /* PokModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDB3083926B5591700EAD154 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3083A26B5592D00EAD154 /* PokViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EDB3083C26B55E8300EAD154 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3083D26B55E9D00EAD154 /* UIView_ext.swift */,
+			);
+			path = Ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +205,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB3081526B5399100EAD154 /* ListViewController.swift in Sources */,
+				EDB3084026B5858E00EAD154 /* Colors.swift in Sources */,
+				EDB3083326B558E000EAD154 /* PokAPI.swift in Sources */,
+				EDB3083026B558D700EAD154 /* Observable.swift in Sources */,
+				EDB3083E26B55E9E00EAD154 /* UIView_ext.swift in Sources */,
 				EDB3082C26B5567000EAD154 /* PokCellView.swift in Sources */,
+				EDB3083626B5590000EAD154 /* IndexModel.swift in Sources */,
+				EDB3083826B5590500EAD154 /* PokModel.swift in Sources */,
 				EDB3081126B5399100EAD154 /* AppDelegate.swift in Sources */,
 				EDB3081326B5399100EAD154 /* SceneDelegate.swift in Sources */,
+				EDB3083126B558D700EAD154 /* AppInfo.swift in Sources */,
+				EDB3083B26B5592D00EAD154 /* PokViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
