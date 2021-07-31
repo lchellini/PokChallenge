@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EDB3081126B5399100EAD154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3081026B5399100EAD154 /* AppDelegate.swift */; };
 		EDB3081326B5399100EAD154 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3081226B5399100EAD154 /* SceneDelegate.swift */; };
-		EDB3081526B5399100EAD154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3081426B5399100EAD154 /* ViewController.swift */; };
+		EDB3081526B5399100EAD154 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3081426B5399100EAD154 /* ListViewController.swift */; };
 		EDB3081826B5399100EAD154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB3081626B5399100EAD154 /* Main.storyboard */; };
 		EDB3081A26B5399200EAD154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3081926B5399200EAD154 /* Assets.xcassets */; };
 		EDB3081D26B5399200EAD154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB3081B26B5399200EAD154 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		EDB3080D26B5399100EAD154 /* PokChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB3081026B5399100EAD154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDB3081226B5399100EAD154 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EDB3081426B5399100EAD154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDB3081426B5399100EAD154 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		EDB3081726B5399100EAD154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDB3081926B5399200EAD154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB3081C26B5399200EAD154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,13 +58,21 @@
 			children = (
 				EDB3081026B5399100EAD154 /* AppDelegate.swift */,
 				EDB3081226B5399100EAD154 /* SceneDelegate.swift */,
-				EDB3081426B5399100EAD154 /* ViewController.swift */,
+				EDB3082426B53B4F00EAD154 /* Views */,
 				EDB3081626B5399100EAD154 /* Main.storyboard */,
 				EDB3081926B5399200EAD154 /* Assets.xcassets */,
 				EDB3081B26B5399200EAD154 /* LaunchScreen.storyboard */,
 				EDB3081E26B5399200EAD154 /* Info.plist */,
 			);
 			path = PokChallenge;
+			sourceTree = "<group>";
+		};
+		EDB3082426B53B4F00EAD154 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3081426B5399100EAD154 /* ListViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB3081526B5399100EAD154 /* ViewController.swift in Sources */,
+				EDB3081526B5399100EAD154 /* ListViewController.swift in Sources */,
 				EDB3081126B5399100EAD154 /* AppDelegate.swift in Sources */,
 				EDB3081326B5399100EAD154 /* SceneDelegate.swift in Sources */,
 			);
