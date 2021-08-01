@@ -44,6 +44,13 @@ class PokViewModel : NSObject {
     }
     
     
+    func getPokSprites() -> [String] {
+        guard let sprites = self.pokSelected?.value?.sprites else {return [String]()}
+        let spritesArray = [sprites.backDefault, sprites.frontDefault, sprites.backFemale, sprites.backShiny, sprites.backShinyFemale, sprites.frontDefault, sprites.frontFemale, sprites.frontShiny, sprites.frontShinyFemale]
+        return spritesArray.compactMap{ $0 }
+    }
+    
+    
     // MARK: - Private methods
     private func parseIndexData(_ data:Data?, errorString:String) {
         if( data != nil ){
