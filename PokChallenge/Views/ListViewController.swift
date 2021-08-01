@@ -17,10 +17,18 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
+        
         self.initTable()
         self.viewModelBind()
         self.getData()
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.customizeNavBar()
+    }
+    
     
     override func didReceiveMemoryWarning() {
         debugPrint("MEMORY WARNING")
@@ -30,6 +38,14 @@ class ListViewController: UIViewController {
     // MARK: - Private methods
     private func getData() {
         self.viewModel.loadPokIndex()
+    }
+    
+    
+    private func customizeNavBar() {
+        let imageView = UIImageView(image:UIImage(named: "pokLogo"))
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        self.navigationItem.titleView = imageView
     }
     
     
@@ -95,4 +111,8 @@ extension ListViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension ListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.viewModel.selectPok(indexPath.row, p_nav: self.navigationController)
+    }
 }
