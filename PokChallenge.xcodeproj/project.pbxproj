@@ -23,6 +23,7 @@
 		EDB3083E26B55E9E00EAD154 /* UIView_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3083D26B55E9D00EAD154 /* UIView_ext.swift */; };
 		EDB3084026B5858E00EAD154 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3083F26B5858E00EAD154 /* Colors.swift */; };
 		EDEF7C2C26B6F727003C155E /* NetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEF7C2B26B6F727003C155E /* NetImageView.swift */; };
+		EDEF7C2E26B72A30003C155E /* Flex Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDEF7C2D26B72A30003C155E /* Flex Medium.ttf */; };
 		EDF3F5CF26B6916700F35B2D /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5CE26B6916700F35B2D /* CustomNavController.swift */; };
 		EDF3F5D126B697AA00F35B2D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D026B697AA00F35B2D /* DetailViewController.swift */; };
 		EDF3F5D326B69B4D00F35B2D /* Colors_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D226B69B4D00F35B2D /* Colors_ext.swift */; };
@@ -50,6 +51,7 @@
 		EDB3083D26B55E9D00EAD154 /* UIView_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_ext.swift; sourceTree = "<group>"; };
 		EDB3083F26B5858E00EAD154 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		EDEF7C2B26B6F727003C155E /* NetImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetImageView.swift; sourceTree = "<group>"; };
+		EDEF7C2D26B72A30003C155E /* Flex Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Flex Medium.ttf"; sourceTree = "<group>"; };
 		EDF3F5CE26B6916700F35B2D /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		EDF3F5D026B697AA00F35B2D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EDF3F5D226B69B4D00F35B2D /* Colors_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors_ext.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		EDF3F5D426B6A2C300F35B2D /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				EDEF7C2D26B72A30003C155E /* Flex Medium.ttf */,
 				EDF3F5D526B6A2C300F35B2D /* Flex Regular.otf */,
 			);
 			name = Font;
@@ -224,6 +227,7 @@
 				EDF3F5D626B6A2C400F35B2D /* Flex Regular.otf in Resources */,
 				EDB3081D26B5399200EAD154 /* LaunchScreen.storyboard in Resources */,
 				EDB3081A26B5399200EAD154 /* Assets.xcassets in Resources */,
+				EDEF7C2E26B72A30003C155E /* Flex Medium.ttf in Resources */,
 				EDB3081826B5399100EAD154 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

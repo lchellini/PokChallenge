@@ -18,14 +18,14 @@ class NetImageView: UIImageView
         self.image = UIImage(named: p_placeHolderImage)
 
         if let cachedImage = self.imageCache.object(forKey: p_imageURL as AnyObject) {
-            debugPrint("image loaded from cache for =\(p_imageURL)")
+            //debugPrint("image loaded from cache for =\(p_imageURL)")
             self.image = cachedImage
             return
         }
 
         DispatchQueue.global().async { [weak self] in
             if let imageData = try? Data(contentsOf: p_imageURL) {
-                debugPrint("image downloaded from server...")
+                //debugPrint("image downloaded from server...")
                 if let image = UIImage(data: imageData) {
                     DispatchQueue.main.async {
                         self!.imageCache.setObject(image, forKey: p_imageURL as AnyObject)
