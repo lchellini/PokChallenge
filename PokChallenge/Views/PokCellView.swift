@@ -15,7 +15,7 @@ let pokCell_Identifier:String = "pokCell"
 class PokCellView: UITableViewCell {
     
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var pokImage: UIImageView!
+    @IBOutlet weak var pokImage: NetImageView!
     @IBOutlet weak var pokName: UILabel!
     
     override func awakeFromNib() {

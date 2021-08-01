@@ -101,7 +101,12 @@ extension ListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: pokCell_Identifier) as! PokCellView
         if let pok = viewModel.poks.value?[indexPath.row] {
             cell.pokName.text = "\(pok.name.capitalized)"
-            cell.pokImage.image = UIImage.init(named: "waitingImage")
+            
+            if let url = URL(string: pok.sprites.frontDefault) {
+                cell.pokImage.loadImage(fromURL: url, p_placeHolderImage: "waitingImage")
+            } else {
+                cell.pokImage.image = UIImage.init(named: "waitingImage")
+            }
         }
         return cell
     }

@@ -35,7 +35,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNU-5Z-I5i">
                                                     <rect key="frame" x="10" y="10" width="394" height="80"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KR8-aY-4Aj">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KR8-aY-4Aj" customClass="NetImageView" customModule="PokChallenge" customModuleProvider="target">
                                                             <rect key="frame" x="10" y="5" width="70" height="70"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="70" id="8Pm-LZ-JBt"/>
