@@ -27,11 +27,8 @@ class DetailViewController: UIViewController {
         
         self.title = self.viewModel.pokSelected?.value?.name.capitalized
         
+        self.viewModelBind()
         self.loadData()
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
     }
     
     
@@ -72,6 +69,22 @@ class DetailViewController: UIViewController {
                     statsLabelCollection[i].text = ""
                 }
             }
+        }
+    }
+    
+    
+    // MARK: - Binding
+    private func viewModelBind() {
+        self.viewModel.pokSelected?.bind{ [weak self] _ in
+            self?.updateData()
+        }
+    }
+    
+    
+    // MARK: - Binding methods
+    func updateData() {
+        DispatchQueue.main.async {
+            self.loadData()
         }
     }
 
