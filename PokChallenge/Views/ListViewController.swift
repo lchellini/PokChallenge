@@ -100,7 +100,7 @@ extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: pokCell_Identifier) as! PokCellView
         if let pok = viewModel.poks.value?[indexPath.row] {
-            cell.pokName.text = "\(pok.name)"
+            cell.pokName.text = "\(pok.name.capitalized)"
             cell.pokImage.image = UIImage.init(named: "waitingImage")
         }
         return cell

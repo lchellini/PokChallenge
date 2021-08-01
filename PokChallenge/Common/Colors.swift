@@ -10,7 +10,7 @@ import UIKit
 
 
 struct Colors {
-    static let mainColor = UIColor.withRGBA(p_red: 227, p_green: 53, p_blue: 13, p_alpha: 1.0)
+    static let main = UIColor.withRGBA(p_red: 227, p_green: 53, p_blue: 13, p_alpha: 1.0)
     
     static let navBarBackGround = UIColor.white
     

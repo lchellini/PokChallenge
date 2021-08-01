@@ -27,7 +27,8 @@ class CustomNavController: UINavigationController {
         self.navigationBar.shadowImage = UIImage()
         self.navigationBar.barTintColor = Colors.navBarBackGround
         
-        self.navigationBar.tintColor = Colors.mainColor
+        self.navigationBar.tintColor = Colors.main
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: Fonts.main!]
         
         self.delegate = self
     }

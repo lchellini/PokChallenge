@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Flex Regular.otf">
+            <string>Flex</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -37,9 +42,9 @@
                                                                 <constraint firstAttribute="width" constant="70" id="EdF-3w-aqI"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuM-7i-moE">
-                                                            <rect key="frame" x="101" y="29.666666666666664" width="270" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="vuM-7i-moE">
+                                                            <rect key="frame" x="101" y="28" width="270" height="24"/>
+                                                            <fontDescription key="fontDescription" name="Flex" family="Flex" pointSize="24"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>

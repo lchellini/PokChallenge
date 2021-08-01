@@ -10,14 +10,15 @@ import UIKit
 
 
 class PokViewModel : NSObject {
-    var poks: Observable<[PokModel]> = Observable([])
+    var poks: Observable<[PokDetailsModel]> = Observable([])
     var lastError: Observable<String> = Observable("")
-    var pokSelected: Observable<PokModel>?
+    var pokSelected: Observable<PokDetailsModel>?
     
     var indexInfo: IndexModel?
     var loadCompleted: Bool = false
     
     
+    // MARK: - Public methods
     func loadPokIndex() {
         if( indexInfo == nil ){
             pokAPI_loadFirstData(p_completion: { data, errorString in
@@ -42,14 +43,19 @@ class PokViewModel : NSObject {
         }
     }
     
+    
+    // MARK: - Private methods
     private func parseIndexData(_ data:Data?, errorString:String) {
         if( data != nil ){
             do {
                 self.indexInfo = try JSONDecoder().decode(IndexModel.self, from: data!)
                 
                 self.poks.value?.append(contentsOf: (self.indexInfo?.results.compactMap({
-                    PokModel(name: $0.name.capitalized, url: $0.url)
+                    PokDetailsModel(name: $0.name)
                 }))!)
+                
+                //Load details
+                self.loadPokDetails(self.indexInfo!.results)
             } catch {
                 self.lastError.value = "Errore caricamento dati: \(error)"
             }
@@ -57,6 +63,30 @@ class PokViewModel : NSObject {
             if( !errorString.isEmpty ){
                 self.lastError.value = errorString
             }
+        }
+    }
+    
+    
+    private func loadPokDetails(_ p_pokList:[PokModel]) {
+        p_pokList.forEach{
+            pokAPI_loadData($0.url, p_completion: { data, errorString in
+                if( data != nil ){
+                    do {
+                        let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+                        if let decoded = try? decoder.decode(PokDetailsModel.self, from: data!) {
+                            guard let podID = decoded.id else {return}
+                            if( podID <= self.poks.value!.count ){
+                                self.poks.value![podID-1] = decoded
+                            }
+                        }
+                    }
+                } else {
+                    if( !errorString.isEmpty ){
+                        debugPrint("loadPokDetails", errorString)
+                    }
+                }
+            })
         }
     }
 }

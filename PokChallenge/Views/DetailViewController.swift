@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.title = self.viewModel.pokSelected?.value?.name
+        self.title = self.viewModel.pokSelected?.value?.name.capitalized
     }
     
     

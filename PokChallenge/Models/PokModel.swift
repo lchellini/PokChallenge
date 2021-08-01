@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct PokModel: Codable {
+struct PokModel: Decodable {
     let name: String
     let url: String
 }

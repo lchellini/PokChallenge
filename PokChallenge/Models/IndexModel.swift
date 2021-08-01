@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct IndexModel: Codable {
+struct IndexModel: Decodable {
     let count: Int
     let next: String
     let results: [PokModel]

@@ -25,6 +25,9 @@
 		EDF3F5CF26B6916700F35B2D /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5CE26B6916700F35B2D /* CustomNavController.swift */; };
 		EDF3F5D126B697AA00F35B2D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D026B697AA00F35B2D /* DetailViewController.swift */; };
 		EDF3F5D326B69B4D00F35B2D /* Colors_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D226B69B4D00F35B2D /* Colors_ext.swift */; };
+		EDF3F5D626B6A2C400F35B2D /* Flex Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF3F5D526B6A2C300F35B2D /* Flex Regular.otf */; };
+		EDF3F5D826B6A43800F35B2D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D726B6A43800F35B2D /* Fonts.swift */; };
+		EDF3F5DA26B6AD5A00F35B2D /* PokDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D926B6AD5A00F35B2D /* PokDetailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		EDF3F5CE26B6916700F35B2D /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		EDF3F5D026B697AA00F35B2D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EDF3F5D226B69B4D00F35B2D /* Colors_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors_ext.swift; sourceTree = "<group>"; };
+		EDF3F5D526B6A2C300F35B2D /* Flex Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Flex Regular.otf"; sourceTree = "<group>"; };
+		EDF3F5D726B6A43800F35B2D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EDF3F5D926B6AD5A00F35B2D /* PokDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokDetailsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 				EDB3083426B558EE00EAD154 /* Models */,
 				EDB3083926B5591700EAD154 /* ViewModels */,
 				EDB3082426B53B4F00EAD154 /* Views */,
+				EDF3F5D426B6A2C300F35B2D /* Font */,
 				EDB3081626B5399100EAD154 /* Main.storyboard */,
 				EDB3081926B5399200EAD154 /* Assets.xcassets */,
 				EDB3081B26B5399200EAD154 /* LaunchScreen.storyboard */,
@@ -111,6 +118,7 @@
 			children = (
 				EDB3082F26B558D700EAD154 /* AppInfo.swift */,
 				EDB3083F26B5858E00EAD154 /* Colors.swift */,
+				EDF3F5D726B6A43800F35B2D /* Fonts.swift */,
 				EDB3082E26B558D700EAD154 /* Observable.swift */,
 				EDB3083226B558E000EAD154 /* PokAPI.swift */,
 			);
@@ -122,6 +130,7 @@
 			children = (
 				EDB3083526B5590000EAD154 /* IndexModel.swift */,
 				EDB3083726B5590500EAD154 /* PokModel.swift */,
+				EDF3F5D926B6AD5A00F35B2D /* PokDetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,6 +151,15 @@
 			);
 			path = Ext;
 			sourceTree = "<group>";
+		};
+		EDF3F5D426B6A2C300F35B2D /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EDF3F5D526B6A2C300F35B2D /* Flex Regular.otf */,
+			);
+			name = Font;
+			path = PokChallenge/Font;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -200,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF3F5D626B6A2C400F35B2D /* Flex Regular.otf in Resources */,
 				EDB3081D26B5399200EAD154 /* LaunchScreen.storyboard in Resources */,
 				EDB3081A26B5399200EAD154 /* Assets.xcassets in Resources */,
 				EDB3081826B5399100EAD154 /* Main.storyboard in Resources */,
@@ -213,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDF3F5D826B6A43800F35B2D /* Fonts.swift in Sources */,
 				EDB3081526B5399100EAD154 /* ListViewController.swift in Sources */,
 				EDB3084026B5858E00EAD154 /* Colors.swift in Sources */,
+				EDF3F5DA26B6AD5A00F35B2D /* PokDetailsModel.swift in Sources */,
 				EDB3083326B558E000EAD154 /* PokAPI.swift in Sources */,
 				EDB3083026B558D700EAD154 /* Observable.swift in Sources */,
 				EDB3083E26B55E9E00EAD154 /* UIView_ext.swift in Sources */,
