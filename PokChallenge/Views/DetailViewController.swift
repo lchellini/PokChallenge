@@ -57,12 +57,16 @@ class DetailViewController: UIViewController {
             self.spriteGallery.reloadData()
             
             weightLabel.textColor = Colors.detailLabelColor
+            weightLabel.font = Fonts.detailLabels
             weightField.text = "\(Double(pok.weight)/10.0) kg"
             weightField.textColor = Colors.detailValueColor
+            weightField.font = Fonts.detailValue
             
             heightLabel.textColor = Colors.detailLabelColor
+            heightLabel.font = Fonts.detailLabels
             heightField.text = "\(Double(pok.height)/10.0) m"
             heightField.textColor = Colors.detailValueColor
+            heightField.font = Fonts.detailValue
             
             if let url = URL(string: (pok.sprites.other?.officialArtwork?.frontDefault)!) {
                 pokImage.loadImage(fromURL: url, p_placeHolderImage: "waitingImage")
