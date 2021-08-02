@@ -22,7 +22,7 @@ func pokAPI_loadData(_ p_url:String, p_completion: @escaping (Data?, String) ->(
     
     let task = URLSession.shared.dataTask(with: url) { data, response, error in
         if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
-            p_completion(nil, "Connection error: \(httpStatus.statusCode)")
+            p_completion(nil, "\(NSLocalizedString("Network.error", comment: "Errore")): \(httpStatus.statusCode)")
         } else {
             if let data = data {
                 p_completion(data, "")

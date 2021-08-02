@@ -58,12 +58,14 @@ class DetailViewController: UIViewController {
             
             weightLabel.textColor = Colors.detailLabelColor
             weightLabel.font = Fonts.detailLabels
+            weightLabel.text = NSLocalizedString("Detail.Weight", comment: "Peso")
             weightField.text = "\(Double(pok.weight)/10.0) kg"
             weightField.textColor = Colors.detailValueColor
             weightField.font = Fonts.detailValue
             
             heightLabel.textColor = Colors.detailLabelColor
             heightLabel.font = Fonts.detailLabels
+            heightLabel.text = NSLocalizedString("Detail.Height", comment: "Altezza")
             heightField.text = "\(Double(pok.height)/10.0) m"
             heightField.textColor = Colors.detailValueColor
             heightField.font = Fonts.detailValue
@@ -76,7 +78,7 @@ class DetailViewController: UIViewController {
             
             for i in 0..<statsLabelCollection.count {
                 if( i < pok.stats.count ){
-                    statsLabelCollection[i].text = pok.stats[i].stat.name
+                    statsLabelCollection[i].text = NSLocalizedString("Detail.\(pok.stats[i].stat.name)", comment: "Stat value")
                     statsLabelCollection[i].textColor = Colors.detailLabelColor
                     statsLabelCollection[i].font = Fonts.detailStatsLabel
                     

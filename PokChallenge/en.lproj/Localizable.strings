@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  PokChallenge
+
+  Created by Lorenzo Chellini on 02/08/21.
+  
+*/
+
+//* -------------- ENGLISH ----------------- *//
+
+"Detail.Weight" = "Weight";
+"Detail.Height" = "Height";
+
+"Detail.hp" = "HP";
+"Detail.attack" = "Attaque";
+"Detail.defense" = "Defense";
+"Detail.special-attack" = "Special Attack";
+"Detail.special-defense" = "Special Defense";
+"Detail.speed" = "Speed";
+
+"Network.error" = "Connection error";
