@@ -60,6 +60,7 @@ class PokViewModel : NSObject {
                 self.poks.value?.append(contentsOf: (self.indexInfo?.results.compactMap({
                     PokDetailsModel(name: $0.name)
                 }))!)
+                self.loadCompleted = self.poks.value!.count >= 880 //== self.indexInfo?.count
                 
                 //Load details
                 self.loadPokDetails(self.indexInfo!.results)

@@ -1,6 +1,6 @@
 //
 //  DownloadedImageView.swift
-//  testMVVM
+//  PokChallenge
 //
 //  Created by Lorenzo Chellini on 01/08/21.
 //

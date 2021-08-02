@@ -120,4 +120,13 @@ extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.viewModel.selectPok(indexPath.row, p_nav: self.navigationController)
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if( !viewModel.loadCompleted ){
+            tableView.addLoading(indexPath) {
+                self.getData()
+                tableView.stopLoading()
+            }
+        }
+    }
 }

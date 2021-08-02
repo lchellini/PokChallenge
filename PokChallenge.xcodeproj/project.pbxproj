@@ -26,9 +26,10 @@
 		EDEF7C2E26B72A30003C155E /* Flex Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDEF7C2D26B72A30003C155E /* Flex Medium.ttf */; };
 		EDEF7C3026B7301F003C155E /* SpriteCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEF7C2F26B7301F003C155E /* SpriteCellView.swift */; };
 		EDEF7C3926B7C009003C155E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDEF7C3526B7BD31003C155E /* Localizable.strings */; };
+		EDEF7C3B26B7D69A003C155E /* UITableView_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEF7C3A26B7D69A003C155E /* UITableView_ext.swift */; };
 		EDF3F5CF26B6916700F35B2D /* CustomNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5CE26B6916700F35B2D /* CustomNavController.swift */; };
 		EDF3F5D126B697AA00F35B2D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D026B697AA00F35B2D /* DetailViewController.swift */; };
-		EDF3F5D326B69B4D00F35B2D /* Colors_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D226B69B4D00F35B2D /* Colors_ext.swift */; };
+		EDF3F5D326B69B4D00F35B2D /* UIColor_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D226B69B4D00F35B2D /* UIColor_ext.swift */; };
 		EDF3F5D626B6A2C400F35B2D /* Flex Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EDF3F5D526B6A2C300F35B2D /* Flex Regular.otf */; };
 		EDF3F5D826B6A43800F35B2D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D726B6A43800F35B2D /* Fonts.swift */; };
 		EDF3F5DA26B6AD5A00F35B2D /* PokDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF3F5D926B6AD5A00F35B2D /* PokDetailsModel.swift */; };
@@ -59,9 +60,10 @@
 		EDEF7C3626B7BD5B003C155E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		EDEF7C3726B7BD5B003C155E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EDEF7C3826B7BD5B003C155E /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EDEF7C3A26B7D69A003C155E /* UITableView_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView_ext.swift; sourceTree = "<group>"; };
 		EDF3F5CE26B6916700F35B2D /* CustomNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavController.swift; sourceTree = "<group>"; };
 		EDF3F5D026B697AA00F35B2D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		EDF3F5D226B69B4D00F35B2D /* Colors_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors_ext.swift; sourceTree = "<group>"; };
+		EDF3F5D226B69B4D00F35B2D /* UIColor_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_ext.swift; sourceTree = "<group>"; };
 		EDF3F5D526B6A2C300F35B2D /* Flex Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Flex Regular.otf"; sourceTree = "<group>"; };
 		EDF3F5D726B6A43800F35B2D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		EDF3F5D926B6AD5A00F35B2D /* PokDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokDetailsModel.swift; sourceTree = "<group>"; };
@@ -160,7 +162,8 @@
 		EDB3083C26B55E8300EAD154 /* Ext */ = {
 			isa = PBXGroup;
 			children = (
-				EDF3F5D226B69B4D00F35B2D /* Colors_ext.swift */,
+				EDF3F5D226B69B4D00F35B2D /* UIColor_ext.swift */,
+				EDEF7C3A26B7D69A003C155E /* UITableView_ext.swift */,
 				EDB3083D26B55E9D00EAD154 /* UIView_ext.swift */,
 			);
 			path = Ext;
@@ -263,8 +266,9 @@
 				EDB3083626B5590000EAD154 /* IndexModel.swift in Sources */,
 				EDB3083826B5590500EAD154 /* PokModel.swift in Sources */,
 				EDB3081126B5399100EAD154 /* AppDelegate.swift in Sources */,
+				EDEF7C3B26B7D69A003C155E /* UITableView_ext.swift in Sources */,
 				EDB3081326B5399100EAD154 /* SceneDelegate.swift in Sources */,
-				EDF3F5D326B69B4D00F35B2D /* Colors_ext.swift in Sources */,
+				EDF3F5D326B69B4D00F35B2D /* UIColor_ext.swift in Sources */,
 				EDB3083126B558D700EAD154 /* AppInfo.swift in Sources */,
 				EDF3F5CF26B6916700F35B2D /* CustomNavController.swift in Sources */,
 				EDB3083B26B5592D00EAD154 /* PokViewModel.swift in Sources */,
