@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var pokImage: NetImageView!
+    @IBOutlet weak var infoBGView: UIView!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var weightField: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
@@ -30,6 +31,9 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.title = self.viewModel.pokSelected?.value?.name.capitalized
+        
+        self.infoBGView.backgroundColor = UIColor.clear
+        self.infoBGView.withBorder(p_width: 2, p_radius: 20, p_color: Colors.detailInfoView)
         
         self.initGallery()
         self.viewModelBind()

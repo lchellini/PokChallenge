@@ -21,6 +21,7 @@ struct Colors {
     
     static let detailLabelColor = Colors.secondary
     static let detailValueColor = Colors.main
+    static let detailInfoView = Colors.main
 }
 
 
